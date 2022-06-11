@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KusYonlendir : MonoBehaviour
 {
@@ -33,9 +34,11 @@ public class KusYonlendir : MonoBehaviour
     {
         if(collision.gameObject.tag=="npc")
         {
+            
             Destroy(collision.gameObject);
-            Debug.Log("Kuþ Öldü");
+            Debug.Log("Kuï¿½ ï¿½ldï¿½");
             Time.timeScale = 0;
+            SceneManager.LoadScene(1);
         }
         
     }

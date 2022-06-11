@@ -1236,6 +1236,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 381226006208277660, guid: 2b3eb177f53aeff44a3846e19186e860, type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 381226006208277660, guid: 2b3eb177f53aeff44a3846e19186e860, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 381226006472717587, guid: 2b3eb177f53aeff44a3846e19186e860, type: 3}
       propertyPath: m_Name
       value: Canvas
