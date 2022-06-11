@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class KusHareket : MonoBehaviour
 {
     public float hiz = 15f;
@@ -18,14 +19,16 @@ public class KusHareket : MonoBehaviour
         {
             transform.Translate(0, +1*Time.deltaTime*hiz, 0);
             
-            Debug.Log("Yukarý");
+            Debug.Log("Yukarï¿½");
         }
         if (Input.GetKey(KeyCode.S))
         {
             transform.Translate(0, -1 * Time.deltaTime*hiz, 0);
             
-            Debug.Log("Aþaðý");
+            Debug.Log("Aï¿½aï¿½ï¿½");
         }
+
+       
 
         
     }
@@ -34,9 +37,13 @@ public class KusHareket : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("npc"))
         {
+            
 
-            Debug.Log("Kuþ Öldü");
+            Debug.Log("Kuï¿½ ï¿½ldï¿½");
             Time.timeScale = 0;
+            
+            
+            
         }
         
     }
