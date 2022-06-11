@@ -16,11 +16,11 @@ public class GameManager : MonoBehaviour
     
     void Update()
     {
-        skorText.text = "Skor : " + skor;
+        skorText.text = "" + skor;
     }
     public void SkorArtýr()
     {
-        skor++;
+        skor+=10;
         ses.Play();
     }
 }

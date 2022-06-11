@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour
     public float suankiHiz;
     
     
+    
     void Awake()
     {
         suankiHiz = minHiz;
@@ -25,7 +26,7 @@ public class Spawner : MonoBehaviour
     }
     IEnumerator bekle()
     {
-        yield return new WaitForSeconds(4.5f);
+        yield return new WaitForSeconds(2f);
         spawnla();
     }
 

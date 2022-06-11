@@ -7,7 +7,7 @@ public class NPCHareket : MonoBehaviour
     AudioSource ses;
     public Spawner spawner;
     public GameManager gm;
-    float hiz = 10f;
+    float hiz = 15f;
     void Start()
     {
         ses = GetComponent<AudioSource>();

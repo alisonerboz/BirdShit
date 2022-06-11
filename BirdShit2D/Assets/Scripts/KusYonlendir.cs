@@ -18,17 +18,30 @@ public class KusYonlendir : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             
-            transform.Rotate(0, 0, yon+5f * Time.deltaTime * 10f);
+            transform.Rotate(0, 0, yon+7f * Time.deltaTime * 10f);
             
         }
         if (Input.GetKey(KeyCode.S))
         {
-            
-            transform.Rotate(0, 0, yon-5f * Time.deltaTime * 10f);
+
+            transform.Rotate(0, 0, yon - 7f * Time.deltaTime * 10f);
+
+        }
+        else
+        {
+            if (transform.rotation.z>0)
+            {
+                transform.Rotate(0, 0, -1);//*Time.deltaTime);
+            }
+            if (transform.rotation.z < 0)
+            {
+                transform.Rotate(0, 0, +1); //* Time.deltaTime);
+            }
             
         }
+            
 
-        transform.Rotate(0, 0, 0);
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
