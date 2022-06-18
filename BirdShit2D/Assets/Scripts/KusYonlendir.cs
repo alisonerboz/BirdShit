@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class KusYonlendir : MonoBehaviour
 {
     [Range(-10f, 10f)] public float yon=0;
+    sicScript cep;
     void Start()
     {
-        
+        cep = FindObjectOfType<sicScript>();
     }
 
     
@@ -49,10 +50,16 @@ public class KusYonlendir : MonoBehaviour
         {
             
             Destroy(collision.gameObject);
-            Debug.Log("Ku� �ld�");
-            Time.timeScale = 0;
+            
             SceneManager.LoadScene(1);
         }
-        
+        if (collision.gameObject.tag == "elma")
+        {
+            cep.cephane = 4;
+            Destroy(collision.gameObject);
+
+            
+        }
+
     }
 }

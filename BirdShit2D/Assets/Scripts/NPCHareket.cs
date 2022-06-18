@@ -7,7 +7,7 @@ public class NPCHareket : MonoBehaviour
     AudioSource ses;
     public Spawner spawner;
     public GameManager gm;
-    float hiz = 15f;
+    float hiz = 17f;
     void Start()
     {
         ses = GetComponent<AudioSource>();
@@ -18,6 +18,7 @@ public class NPCHareket : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.left * hiz * Time.deltaTime);//sola hareket
+        Destroy(gameObject, 5f);
     }
 
     private void OnCollisionEnter2D (Collision2D other)
@@ -32,6 +33,7 @@ public class NPCHareket : MonoBehaviour
         {
             
             gm.SkorArtýr();
+            Destroy(other.gameObject);
             Destroy(gameObject);
             
 

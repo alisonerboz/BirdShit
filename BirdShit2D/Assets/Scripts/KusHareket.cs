@@ -19,13 +19,13 @@ public class KusHareket : MonoBehaviour
         {
             transform.Translate(0, +1*Time.deltaTime*hiz, 0);
             
-            Debug.Log("Yukar�");
+            
         }
         if (Input.GetKey(KeyCode.S))
         {
             transform.Translate(0, -1 * Time.deltaTime*hiz, 0);
             
-            Debug.Log("A�a��");
+            
         }
 
        
@@ -39,8 +39,8 @@ public class KusHareket : MonoBehaviour
         {
             
 
-            Debug.Log("Ku� �ld�");
-            Time.timeScale = 0;
+            
+            
             
             
             
